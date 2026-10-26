@@ -1,0 +1,20 @@
+{
+  "name": "blockchain-job-verification-system",
+  "version": "1.0.0",
+  "description": "Blockchain-Based Job Offer and Employment Verification System",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test:contracts": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.4",
+    "dotenv": "^16.3.1"
+  }
+}
